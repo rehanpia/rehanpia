@@ -1,11 +1,11 @@
-//"spdx-License-Identifier : UNLICENSED"
-pragma solidity 0.8.0;
+//"SPDX-License-Identifier:UNLICENSED"
+pragma solidity 0.8.7;
 
 // basic contract imported from github openzeppline.
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/extensions/ERC20Capped.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/math/SafeMath.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/utils/SafeERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Capped.sol";
+import "@openzeppelin/contracts/utils/math/safemath.sol";
+import "@openzeppelin/contracts/token/ERC20/utils/safeERC20.sol";
 
 
     contract CRICFUNToken is ERC20 {
@@ -46,6 +46,7 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contr
         require(releaseTime_ > block.timestamp, "TokenTimelock: release time is before current time");
         _tokenaddress = token_;
         _beneficiaryaddress = beneficiary_;
+        //provide Epoch & Unix Timestamp that is 1632497147 for 24sep21 0325PM
         _releaseTime = releaseTime_;
     }
 
