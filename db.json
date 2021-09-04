@@ -1,13 +1,11 @@
 {
-    "tokens": [
-        {
-            "id": 0,
-            "description": "Pink Rby",
-            "image": "https://https://github.com/rehanpia/Assignment-4-ERC721-Ext/blob/master/art/1.png",
-			      "name": "Pink Gem",
-			"level": "Stage 1",
-			"HP": "90",
-			"type1": "crystel",
-			"type2": "rare"
-        } ]
+  "posts": [
+    {
+      "id": 1,
+      "title": "hello"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
